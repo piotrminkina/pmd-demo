@@ -9,6 +9,23 @@ use Symfony\Component\Config\Loader\LoaderInterface;
 class AppKernel extends Kernel
 {
     /**
+     * @var string|null
+     */
+    protected $workDir;
+
+    /**
+     * @inheritdoc
+     */
+    public function __construct($environment, $debug)
+    {
+        parent::__construct(
+            $environment,
+            $debug
+        );
+        $this->workDir = $this->getWorkDir();
+    }
+
+    /**
      * @inheritdoc
      */
     public function registerBundles()
@@ -43,5 +60,35 @@ class AppKernel extends Kernel
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
         $loader->load(__DIR__.'/config/config_'.$this->getEnvironment().'.yml');
+    }
+
+    /**
+     * Gets the application work dir.
+     *
+     * @return string The application work dir
+     */
+    public function getWorkDir()
+    {
+        if (null === $this->workDir) {
+            $this->workDir = dirname($this->getRootDir()).'/var';
+        }
+
+        return $this->workDir;
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function getCacheDir()
+    {
+        return $this->workDir.'/cache/'.$this->environment;
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function getLogDir()
+    {
+        return $this->workDir.'/logs';
     }
 }
