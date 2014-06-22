@@ -1,9 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "0f5bf28fac35560dbdb2e597d32df056",
+    "hash": "39c20841a6b77d955475ccba50e5cd90",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -869,6 +870,117 @@
             "time": "2014-06-04 16:30:04"
         },
         {
+            "name": "piotrminkina/doctrine-bundle",
+            "version": "dev-master",
+            "target-dir": "PMD/DoctrineBundle",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:piotrminkina/doctrine-bundle.git",
+                "reference": "feb2e5de320ac6c4ca27d38266e058fd8dc09d8d"
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": "~2.4"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "PMD\\DoctrineBundle": ""
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Piotr Minkina",
+                    "email": "projekty@piotrminkina.pl",
+                    "homepage": "http://www.piotrminkina.pl"
+                }
+            ],
+            "description": "Pre-configured Doctrine to works with future projects",
+            "time": "2014-05-19 17:43:49"
+        },
+        {
+            "name": "piotrminkina/frontend-bundle",
+            "version": "dev-master",
+            "target-dir": "PMD/FrontendBundle",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:piotrminkina/frontend-bundle.git",
+                "reference": "d7cd20c19052163c30f4ea514e01f53ca2cc431e"
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": "~2.4"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "PMD\\FrontendBundle": ""
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Piotr Minkina",
+                    "email": "projekty@piotrminkina.pl",
+                    "homepage": "http://www.piotrminkina.pl"
+                }
+            ],
+            "description": "Utilities to build frontend, like layouts, blocks, templates etc.",
+            "time": "2014-05-19 17:49:24"
+        },
+        {
+            "name": "piotrminkina/resources-resolver-bundle",
+            "version": "dev-master",
+            "target-dir": "PMD/ResourcesResolverBundle",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:piotrminkina/resources-resolver-bundle.git",
+                "reference": "c4212f6dbf3309aee69ec245dd267882302731fb"
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": "~2.4"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "PMD\\ResourcesResolverBundle": ""
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Piotr Minkina",
+                    "email": "projekty@piotrminkina.pl",
+                    "homepage": "http://www.piotrminkina.pl"
+                }
+            ],
+            "description": "Resolves controllers actions parameters and injects Resources",
+            "time": "2014-04-22 18:14:33"
+        },
+        {
             "name": "psr/log",
             "version": "1.0.0",
             "source": {
@@ -1585,9 +1697,11 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "piotrminkina/doctrine-bundle": 20,
+        "piotrminkina/frontend-bundle": 20,
+        "piotrminkina/resources-resolver-bundle": 20
+    },
     "platform": {
         "php": ">=5.3.3"
     },

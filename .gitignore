@@ -1,4 +1,7 @@
+/web/assets/
 /web/bundles/
+/web/components/
+!web/media/.gitkeep
 /app/config/parameters.yml
 /var/bootstrap.php.cache
 /var/SymfonyRequirements.php

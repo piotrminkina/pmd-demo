@@ -1,13 +1,35 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
-</html>
+{% extends '@PMDFrontend/base.html.twig' %}
+
+
+{% block document %}
+    {%- set document = document + {
+        body_class: 'container',
+    } -%}
+
+    {{- parent() -}}
+{% endblock %}
+
+{% block document_title %}
+    {{ (block('title')|trim ~ ' &mdash; Symfony Workflow Demo')|raw }}
+{% endblock %}
+
+{% block document_javascripts %}
+    {% javascripts
+        'components/jquery/dist/jquery.js'
+        'components/bootstrap/dist/js/bootstrap.js'
+        name='scripts' output='assets/*.js'
+    %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
+
+{% block document_stylesheets %}
+    {% stylesheets
+        'components/bootstrap/less/bootstrap.less'
+        'components/bootstrap/less/theme.less'
+        'components/fontawesome/less/font-awesome.less'
+        name='styles' output='assets/*.css'
+    %}
+        <link type="text/css" rel="stylesheet" href="{{ asset_url }}">
+    {% endstylesheets %}
+{% endblock %}

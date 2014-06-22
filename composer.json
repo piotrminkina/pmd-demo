@@ -1,8 +1,15 @@
 {
-    "name": "symfony/framework-standard-edition",
+    "name": "piotrminkina/symfony-workflow-demo",
     "license": "MIT",
     "type": "project",
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "description": "The \"Symfony Workflow Demo\" distribution to show PMDWorkflowBundle in action",
+    "authors": [
+        {
+            "name": "Piotr Minkina",
+            "email": "projekty@piotrminkina.pl",
+            "homepage": "http://www.piotrminkina.pl"
+        }
+    ],
     "autoload": {
         "psr-0": { "": "src/", "SymfonyStandard": "app/" }
     },
@@ -17,11 +24,21 @@
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~3.0",
         "sensio/framework-extra-bundle": "~3.0",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "incenteev/composer-parameter-handler": "~2.0",
+
+        "piotrminkina/doctrine-bundle": "dev-master",
+        "piotrminkina/frontend-bundle": "dev-master",
+        "piotrminkina/resources-resolver-bundle": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.piotrminkina.pl"
+        }
+    ],
     "scripts": {
         "post-root-package-install": [
             "SymfonyStandard\\Composer::hookRootPackageInstall"
@@ -51,6 +68,7 @@
         "symfony-bin-dir": "bin",
         "symfony-var-dir": "var",
         "symfony-web-dir": "web",
+        "symfony-assets-install": "relative",
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
         },
