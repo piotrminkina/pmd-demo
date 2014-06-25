@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "51f55f5cad094d25fc0bd2f6fe206a49",
+    "hash": "9406a965f80fe1766fb47ab1cfe80f9a",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -913,7 +913,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:piotrminkina/frontend-bundle.git",
-                "reference": "d7cd20c19052163c30f4ea514e01f53ca2cc431e"
+                "reference": "1f7a727a38d5e897838297b95de30157156be851"
             },
             "require": {
                 "php": ">=5.3.3",
@@ -941,7 +941,7 @@
                 }
             ],
             "description": "Utilities to build frontend, like layouts, blocks, templates etc.",
-            "time": "2014-05-19 17:49:24"
+            "time": "2014-06-21 22:04:14"
         },
         {
             "name": "piotrminkina/resources-resolver-bundle",
@@ -950,7 +950,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:piotrminkina/resources-resolver-bundle.git",
-                "reference": "c4212f6dbf3309aee69ec245dd267882302731fb"
+                "reference": "084c565b9dbe239eaf467f291a7953baf25f515d"
             },
             "require": {
                 "php": ">=5.3.3",
@@ -978,7 +978,7 @@
                 }
             ],
             "description": "Resolves controllers actions parameters and injects Resources",
-            "time": "2014-04-22 18:14:33"
+            "time": "2014-05-22 20:15:31"
         },
         {
             "name": "piotrminkina/workflow-bundle",
@@ -987,17 +987,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/piotrminkina/workflow-bundle.git",
-                "reference": "cc22825a70e953d7051b2389d4fa3b4c751ba0ba"
+                "reference": "6148714974b1c7854a37c5b2587dcead21692964"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piotrminkina/workflow-bundle/zipball/cc22825a70e953d7051b2389d4fa3b4c751ba0ba",
-                "reference": "cc22825a70e953d7051b2389d4fa3b4c751ba0ba",
+                "url": "https://api.github.com/repos/piotrminkina/workflow-bundle/zipball/6148714974b1c7854a37c5b2587dcead21692964",
+                "reference": "6148714974b1c7854a37c5b2587dcead21692964",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
-                "symfony/framework-bundle": "~2.5"
+                "symfony/http-kernel": "~2.5"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -1022,7 +1022,7 @@
                 }
             ],
             "description": "Symfony2 Workflow Bundle to define workflows to handle the volatile and changing business processes",
-            "time": "2014-06-25 16:23:14"
+            "time": "2014-06-25 17:38:32"
         },
         {
             "name": "psr/log",
@@ -1688,17 +1688,17 @@
     "packages-dev": [
         {
             "name": "sensio/generator-bundle",
-            "version": "v2.3.4",
+            "version": "v2.3.5",
             "target-dir": "Sensio/Bundle/GeneratorBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "4a7b126e9c22f858e3584b19ddce6e5bdd7677ee"
+                "reference": "8b7a33aa3d22388443b6de0b0cf184122e9f60d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/4a7b126e9c22f858e3584b19ddce6e5bdd7677ee",
-                "reference": "4a7b126e9c22f858e3584b19ddce6e5bdd7677ee",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/8b7a33aa3d22388443b6de0b0cf184122e9f60d2",
+                "reference": "8b7a33aa3d22388443b6de0b0cf184122e9f60d2",
                 "shasum": ""
             },
             "require": {
@@ -1734,7 +1734,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2013-08-21 18:09:35"
+            "time": "2014-04-28 14:01:06"
         }
     ],
     "aliases": [
