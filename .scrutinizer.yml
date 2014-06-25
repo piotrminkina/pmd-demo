@@ -1,6 +1,3 @@
-before_commands:
-    - composer install -n
-
 filter:
     paths:
         - src/*
