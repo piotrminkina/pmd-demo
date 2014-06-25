@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "39c20841a6b77d955475ccba50e5cd90",
+    "hash": "51f55f5cad094d25fc0bd2f6fe206a49",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -981,6 +981,50 @@
             "time": "2014-04-22 18:14:33"
         },
         {
+            "name": "piotrminkina/workflow-bundle",
+            "version": "dev-master",
+            "target-dir": "PMD/WorkflowBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/piotrminkina/workflow-bundle.git",
+                "reference": "cc22825a70e953d7051b2389d4fa3b4c751ba0ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/piotrminkina/workflow-bundle/zipball/cc22825a70e953d7051b2389d4fa3b4c751ba0ba",
+                "reference": "cc22825a70e953d7051b2389d4fa3b4c751ba0ba",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": "~2.5"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "PMD\\WorkflowBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Piotr Minkina",
+                    "email": "projekty@piotrminkina.pl",
+                    "homepage": "http://www.piotrminkina.pl"
+                }
+            ],
+            "description": "Symfony2 Workflow Bundle to define workflows to handle the volatile and changing business processes",
+            "time": "2014-06-25 16:23:14"
+        },
+        {
             "name": "psr/log",
             "version": "1.0.0",
             "source": {
@@ -1700,7 +1744,8 @@
     "stability-flags": {
         "piotrminkina/doctrine-bundle": 20,
         "piotrminkina/frontend-bundle": 20,
-        "piotrminkina/resources-resolver-bundle": 20
+        "piotrminkina/resources-resolver-bundle": 20,
+        "piotrminkina/workflow-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"

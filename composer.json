@@ -28,7 +28,8 @@
 
         "piotrminkina/doctrine-bundle": "dev-master",
         "piotrminkina/frontend-bundle": "dev-master",
-        "piotrminkina/resources-resolver-bundle": "dev-master"
+        "piotrminkina/resources-resolver-bundle": "dev-master",
+        "piotrminkina/workflow-bundle": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
