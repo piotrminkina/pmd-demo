@@ -1,4 +1,4 @@
-Symfony Workflow Demo
+Workflow Demo
 =====================
 
-The "Symfony Workflow Demo" to show PMDWorkflowBundle in action
+Symfony2 Workflow Demo to show PMDWorkflowBundle in action
