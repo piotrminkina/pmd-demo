@@ -26,10 +26,10 @@
         "sensio/framework-extra-bundle": "~3.0",
         "incenteev/composer-parameter-handler": "~2.0",
 
-        "piotrminkina/doctrine-bundle": "master@dev",
-        "piotrminkina/frontend-bundle": "master@dev",
-        "piotrminkina/resources-resolver-bundle": "master@dev",
-        "piotrminkina/workflow-bundle": "master@dev"
+        "piotrminkina/doctrine-bundle": "~0.1@dev",
+        "piotrminkina/frontend-bundle": "~0.1@dev",
+        "piotrminkina/resources-resolver-bundle": "~0.1@dev",
+        "piotrminkina/workflow-bundle": "~0.1@dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
