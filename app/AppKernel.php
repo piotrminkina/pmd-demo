@@ -40,7 +40,6 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
-            new PMD\DoctrineBundle\PMDDoctrineBundle(),
             new PMD\FrontendBundle\PMDFrontendBundle(),
             new PMD\ResourcesResolverBundle\PMDResourcesResolverBundle(),
             new PMD\WorkflowBundle\PMDWorkflowBundle(),

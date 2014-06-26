@@ -67,7 +67,6 @@ doctrine:
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
         auto_mapping: true
-        naming_strategy: pmd_doctrine.orm_mapping.naming_strategy_underscore
 
 # Swiftmailer Configuration
 swiftmailer:

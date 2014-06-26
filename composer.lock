@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b533a1ccdf131aa608f72be225d375af",
+    "hash": "fb338868520d36cc68e7abf1954bbce4",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -870,43 +870,6 @@
             "time": "2014-06-04 16:30:04"
         },
         {
-            "name": "piotrminkina/doctrine-bundle",
-            "version": "dev-master",
-            "target-dir": "PMD/DoctrineBundle",
-            "source": {
-                "type": "git",
-                "url": "git@bitbucket.org:piotrminkina/doctrine-bundle.git",
-                "reference": "feb2e5de320ac6c4ca27d38266e058fd8dc09d8d"
-            },
-            "require": {
-                "php": ">=5.3.3",
-                "symfony/framework-bundle": "~2.4"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "PMD\\DoctrineBundle": ""
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Piotr Minkina",
-                    "email": "projekty@piotrminkina.pl",
-                    "homepage": "http://www.piotrminkina.pl"
-                }
-            ],
-            "description": "Pre-configured Doctrine to works with future projects",
-            "time": "2014-05-19 17:43:49"
-        },
-        {
             "name": "piotrminkina/frontend-bundle",
             "version": "dev-master",
             "target-dir": "PMD/FrontendBundle",
@@ -987,12 +950,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/piotrminkina/workflow-bundle.git",
-                "reference": "6148714974b1c7854a37c5b2587dcead21692964"
+                "reference": "72eaee4ef93c3b2d9fdb27d91bce23cd7d3f4cca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piotrminkina/workflow-bundle/zipball/6148714974b1c7854a37c5b2587dcead21692964",
-                "reference": "6148714974b1c7854a37c5b2587dcead21692964",
+                "url": "https://api.github.com/repos/piotrminkina/workflow-bundle/zipball/72eaee4ef93c3b2d9fdb27d91bce23cd7d3f4cca",
+                "reference": "72eaee4ef93c3b2d9fdb27d91bce23cd7d3f4cca",
                 "shasum": ""
             },
             "require": {
@@ -1022,7 +985,7 @@
                 }
             ],
             "description": "Symfony2 Workflow Bundle to define workflows to handle the volatile and changing business processes",
-            "time": "2014-06-25 17:38:32"
+            "time": "2014-06-26 08:37:17"
         },
         {
             "name": "psr/log",
@@ -1742,7 +1705,6 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "piotrminkina/doctrine-bundle": 20,
         "piotrminkina/frontend-bundle": 20,
         "piotrminkina/resources-resolver-bundle": 20,
         "piotrminkina/workflow-bundle": 20
