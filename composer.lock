@@ -875,8 +875,14 @@
             "target-dir": "PMD/FrontendBundle",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:piotrminkina/frontend-bundle.git",
-                "reference": "1f7a727a38d5e897838297b95de30157156be851"
+                "url": "https://github.com/piotrminkina/frontend-bundle.git",
+                "reference": "bab7f9fb59c50b40acda0c12c5595813fc030709"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/piotrminkina/frontend-bundle/zipball/bab7f9fb59c50b40acda0c12c5595813fc030709",
+                "reference": "bab7f9fb59c50b40acda0c12c5595813fc030709",
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
@@ -893,8 +899,9 @@
                     "PMD\\FrontendBundle": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "proprietary"
+                "MIT"
             ],
             "authors": [
                 {
@@ -903,8 +910,8 @@
                     "homepage": "http://www.piotrminkina.pl"
                 }
             ],
-            "description": "Utilities to build frontend, like layouts, blocks, templates etc.",
-            "time": "2014-06-21 22:04:14"
+            "description": "Symfony2 Frontend Bundle that helps build User Interfaces by provide set of Blocks and Layouts to use with existing standard controllers",
+            "time": "2014-06-26 13:53:38"
         },
         {
             "name": "piotrminkina/resources-resolver-bundle",
@@ -912,12 +919,24 @@
             "target-dir": "PMD/ResourcesResolverBundle",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:piotrminkina/resources-resolver-bundle.git",
-                "reference": "084c565b9dbe239eaf467f291a7953baf25f515d"
+                "url": "https://github.com/piotrminkina/resources-resolver-bundle.git",
+                "reference": "202be3cfc52f3782de80af49ab3b449c91715dd9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/piotrminkina/resources-resolver-bundle/zipball/202be3cfc52f3782de80af49ab3b449c91715dd9",
+                "reference": "202be3cfc52f3782de80af49ab3b449c91715dd9",
+                "shasum": ""
             },
             "require": {
+                "doctrine/inflector": "~1.0",
                 "php": ">=5.3.3",
-                "symfony/framework-bundle": "~2.4"
+                "symfony/config": "~2.5",
+                "symfony/dependency-injection": "~2.5",
+                "symfony/event-dispatcher": "~2.5",
+                "symfony/expression-language": "~2.5",
+                "symfony/http-foundation": "~2.5",
+                "symfony/http-kernel": "~2.5"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -930,8 +949,9 @@
                     "PMD\\ResourcesResolverBundle": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "proprietary"
+                "MIT"
             ],
             "authors": [
                 {
@@ -940,8 +960,8 @@
                     "homepage": "http://www.piotrminkina.pl"
                 }
             ],
-            "description": "Resolves controllers actions parameters and injects Resources",
-            "time": "2014-05-22 20:15:31"
+            "description": "Symfony2 Resources Resolver Bundle that resolves dependencies from controllers actions by inject configured resources",
+            "time": "2014-06-26 13:43:59"
         },
         {
             "name": "piotrminkina/workflow-bundle",
