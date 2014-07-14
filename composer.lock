@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ad4d69f7aefd3da030ecca6021a8d959",
+    "hash": "88872bf56ddeb00922faa41a3f03ba77",
     "packages": [
         {
             "name": "doctrine/annotations",
-            "version": "v1.1.2",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "40db0c96985aab2822edbc4848b3bd2429e02670"
+                "reference": "d9b1a37e9351ddde1f19f09a02e3d6ee92e82efd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/40db0c96985aab2822edbc4848b3bd2429e02670",
-                "reference": "40db0c96985aab2822edbc4848b3bd2429e02670",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/d9b1a37e9351ddde1f19f09a02e3d6ee92e82efd",
+                "reference": "d9b1a37e9351ddde1f19f09a02e3d6ee92e82efd",
                 "shasum": ""
             },
             "require": {
@@ -25,12 +25,13 @@
                 "php": ">=5.3.2"
             },
             "require-dev": {
-                "doctrine/cache": "1.*"
+                "doctrine/cache": "1.*",
+                "phpunit/phpunit": "4.*"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -44,7 +45,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -76,7 +77,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2013-06-16 21:33:03"
+            "time": "2014-07-06 15:52:21"
         },
         {
             "name": "doctrine/cache",
@@ -554,16 +555,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.4.3",
+            "version": "v2.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "8a13376d42b5ea467727ffe730aa0e14ca3c5e29"
+                "reference": "fc19c3b53dcd00e6584db40669fdd699c4671f97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/8a13376d42b5ea467727ffe730aa0e14ca3c5e29",
-                "reference": "8a13376d42b5ea467727ffe730aa0e14ca3c5e29",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/fc19c3b53dcd00e6584db40669fdd699c4671f97",
+                "reference": "fc19c3b53dcd00e6584db40669fdd699c4671f97",
                 "shasum": ""
             },
             "require": {
@@ -626,7 +627,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2014-06-10 11:49:08"
+            "time": "2014-07-11 03:05:53"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -876,12 +877,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/piotrminkina/frontend-bundle.git",
-                "reference": "bab7f9fb59c50b40acda0c12c5595813fc030709"
+                "reference": "73526e3966d8f4b26c7a4f17658e935132241afa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piotrminkina/frontend-bundle/zipball/bab7f9fb59c50b40acda0c12c5595813fc030709",
-                "reference": "bab7f9fb59c50b40acda0c12c5595813fc030709",
+                "url": "https://api.github.com/repos/piotrminkina/frontend-bundle/zipball/73526e3966d8f4b26c7a4f17658e935132241afa",
+                "reference": "73526e3966d8f4b26c7a4f17658e935132241afa",
                 "shasum": ""
             },
             "require": {
@@ -911,7 +912,7 @@
                 }
             ],
             "description": "Symfony2 Frontend Bundle that helps build User Interfaces by provide set of Blocks and Layouts to use with existing standard controllers",
-            "time": "2014-06-26 13:53:38"
+            "time": "2014-06-26 14:26:18"
         },
         {
             "name": "piotrminkina/resources-resolver-bundle",
@@ -920,12 +921,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/piotrminkina/resources-resolver-bundle.git",
-                "reference": "202be3cfc52f3782de80af49ab3b449c91715dd9"
+                "reference": "c3a24febf95a0dfc44ab3e626fa40062dddddc52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piotrminkina/resources-resolver-bundle/zipball/202be3cfc52f3782de80af49ab3b449c91715dd9",
-                "reference": "202be3cfc52f3782de80af49ab3b449c91715dd9",
+                "url": "https://api.github.com/repos/piotrminkina/resources-resolver-bundle/zipball/c3a24febf95a0dfc44ab3e626fa40062dddddc52",
+                "reference": "c3a24febf95a0dfc44ab3e626fa40062dddddc52",
                 "shasum": ""
             },
             "require": {
@@ -961,7 +962,7 @@
                 }
             ],
             "description": "Symfony2 Resources Resolver Bundle that resolves dependencies from controllers actions by inject configured resources",
-            "time": "2014-06-26 13:43:59"
+            "time": "2014-06-26 14:28:26"
         },
         {
             "name": "piotrminkina/state-machine-bundle",
@@ -970,16 +971,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/piotrminkina/state-machine-bundle.git",
-                "reference": "eb638c320c7fd00bcce857e57c89ca9559d57a78"
+                "reference": "264f0885992f7736b233623a29ad05d8d98174f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piotrminkina/state-machine-bundle/zipball/eb638c320c7fd00bcce857e57c89ca9559d57a78",
-                "reference": "eb638c320c7fd00bcce857e57c89ca9559d57a78",
+                "url": "https://api.github.com/repos/piotrminkina/state-machine-bundle/zipball/264f0885992f7736b233623a29ad05d8d98174f2",
+                "reference": "264f0885992f7736b233623a29ad05d8d98174f2",
                 "shasum": ""
             },
             "require": {
+                "doctrine/collections": "1.2.*",
                 "php": ">=5.3.3",
+                "symfony/config": "~2.5",
+                "symfony/dependency-injection": "~2.5",
                 "symfony/http-kernel": "~2.5"
             },
             "require-dev": {
@@ -1008,7 +1012,7 @@
                 }
             ],
             "description": "Symfony2 State Machine Bundle to define state machines built with states, transitions and actions",
-            "time": "2014-07-14 05:15:27"
+            "time": "2014-07-14 18:49:23"
         },
         {
             "name": "piotrminkina/workflow-bundle",
@@ -1017,17 +1021,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/piotrminkina/workflow-bundle.git",
-                "reference": "72eaee4ef93c3b2d9fdb27d91bce23cd7d3f4cca"
+                "reference": "ea074b9b5bcb4ab01973a6e39410ff971f542496"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piotrminkina/workflow-bundle/zipball/72eaee4ef93c3b2d9fdb27d91bce23cd7d3f4cca",
-                "reference": "72eaee4ef93c3b2d9fdb27d91bce23cd7d3f4cca",
+                "url": "https://api.github.com/repos/piotrminkina/workflow-bundle/zipball/ea074b9b5bcb4ab01973a6e39410ff971f542496",
+                "reference": "ea074b9b5bcb4ab01973a6e39410ff971f542496",
                 "shasum": ""
             },
             "require": {
+                "doctrine/collections": "1.2.*",
                 "php": ">=5.3.3",
                 "symfony/http-kernel": "~2.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -1052,7 +1060,7 @@
                 }
             ],
             "description": "Symfony2 Workflow Bundle to define workflows to handle the volatile and changing business processes",
-            "time": "2014-06-26 08:37:17"
+            "time": "2014-07-12 18:58:54"
         },
         {
             "name": "psr/log",
@@ -1494,16 +1502,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.5.0",
+            "version": "v2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "59365832a09a1d914d14cbca6a21a7f572760c3b"
+                "reference": "e3d2844abc988bc467bb1593cd340700096b0ac0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/59365832a09a1d914d14cbca6a21a7f572760c3b",
-                "reference": "59365832a09a1d914d14cbca6a21a7f572760c3b",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/e3d2844abc988bc467bb1593cd340700096b0ac0",
+                "reference": "e3d2844abc988bc467bb1593cd340700096b0ac0",
                 "shasum": ""
             },
             "require": {
@@ -1511,7 +1519,7 @@
                 "php": ">=5.3.3",
                 "psr/log": "~1.0",
                 "symfony/icu": "~1.0",
-                "twig/twig": "~1.11"
+                "twig/twig": "~1.12"
             },
             "replace": {
                 "symfony/browser-kit": "self.version",
@@ -1606,29 +1614,29 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-05-31 18:45:50"
+            "time": "2014-07-08 14:42:08"
         },
         {
             "name": "twig/extensions",
-            "version": "v1.0.1",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig-extensions.git",
-                "reference": "f91a82ec225e5bb108e01a0f93c9be04f84dcfa0"
+                "reference": "c0ab818595338dd5569369bfce2552d02cec5d50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig-extensions/zipball/f91a82ec225e5bb108e01a0f93c9be04f84dcfa0",
-                "reference": "f91a82ec225e5bb108e01a0f93c9be04f84dcfa0",
+                "url": "https://api.github.com/repos/fabpot/Twig-extensions/zipball/c0ab818595338dd5569369bfce2552d02cec5d50",
+                "reference": "c0ab818595338dd5569369bfce2552d02cec5d50",
                 "shasum": ""
             },
             "require": {
-                "twig/twig": "~1.0"
+                "twig/twig": "~1.12"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -1651,24 +1659,23 @@
             "description": "Common additional features for Twig that do not directly belong in core",
             "homepage": "https://github.com/fabpot/Twig-extensions",
             "keywords": [
-                "debug",
                 "i18n",
                 "text"
             ],
-            "time": "2013-10-18 19:37:15"
+            "time": "2014-07-05 10:01:35"
         },
         {
             "name": "twig/twig",
-            "version": "v1.15.1",
+            "version": "v1.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "1fb5784662f438d7d96a541e305e28b812e2eeed"
+                "reference": "8ce37115802e257a984a82d38254884085060024"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/1fb5784662f438d7d96a541e305e28b812e2eeed",
-                "reference": "1fb5784662f438d7d96a541e305e28b812e2eeed",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/8ce37115802e257a984a82d38254884085060024",
+                "reference": "8ce37115802e257a984a82d38254884085060024",
                 "shasum": ""
             },
             "require": {
@@ -1677,7 +1684,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.15-dev"
+                    "dev-master": "1.16-dev"
                 }
             },
             "autoload": {
@@ -1697,7 +1704,7 @@
                     "role": "Lead Developer"
                 },
                 {
-                    "name": "Armin Ronacher",
+                    "name": "Armin Ronacher2",
                     "email": "armin.ronacher@active-4.com",
                     "role": "Project Founder"
                 },
@@ -1712,7 +1719,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2014-02-13 10:19:29"
+            "time": "2014-07-05 12:19:05"
         }
     ],
     "packages-dev": [
