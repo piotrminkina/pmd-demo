@@ -44,6 +44,8 @@ class AppKernel extends Kernel
             new PMD\ResourcesResolverBundle\PMDResourcesResolverBundle(),
             new PMD\WorkflowBundle\PMDWorkflowBundle(),
             new PMD\StateMachineBundle\PMDStateMachineBundle(),
+
+            new PMD\WorkflowDemoBundle\PMDWorkflowDemoBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
