@@ -82,3 +82,42 @@ sensio_framework_extra:
 
 # PMD Frontend Configuration
 pmd_frontend: ~
+
+# PMD State Machine Configuration
+pmd_state_machine:
+    definitions:
+        invoice_management:
+            name: "Invoice management"
+            description: "Invoice management description"
+            states:
+                registered:
+                    transitions:
+                        - accepted
+                        - corrected
+                        - canceled
+
+                corrected:
+                    transitions:
+                        - canceled
+                        - paid
+                        - expired
+
+                accepted:
+                    transitions:
+                        - paid
+                        - expired
+
+                paid:
+                    transitions:
+                        - removed
+
+                canceled:
+                    transitions:
+                        - removed
+
+                removed:
+                    transitions: ~
+
+                expired:
+                    transitions:
+                        - paid
