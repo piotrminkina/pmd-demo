@@ -28,7 +28,8 @@
 
         "piotrminkina/frontend-bundle": "~0.1@dev",
         "piotrminkina/resources-resolver-bundle": "~0.1@dev",
-        "piotrminkina/workflow-bundle": "~0.1@dev"
+        "piotrminkina/workflow-bundle": "~0.1@dev",
+        "piotrminkina/state-machine-bundle": "~0.1@dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
