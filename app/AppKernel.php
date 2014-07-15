@@ -44,10 +44,12 @@ class AppKernel extends Kernel
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new FOS\RestBundle\FOSRestBundle(),
 
-            new PMD\FrontendBundle\PMDFrontendBundle(),
+            new PMD\DoctrineBundle\PMDDoctrineBundle(),
+            new PMD\RoutingBundle\PMDRoutingBundle(),
             new PMD\ResourcesResolverBundle\PMDResourcesResolverBundle(),
             new PMD\WorkflowBundle\PMDWorkflowBundle(),
             new PMD\StateMachineBundle\PMDStateMachineBundle(),
+            new PMD\FrontendBundle\PMDFrontendBundle(),
 
             new PMD\WorkflowDemoBundle\PMDWorkflowDemoBundle(),
         );
