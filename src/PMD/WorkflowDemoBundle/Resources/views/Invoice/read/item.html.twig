@@ -1,0 +1,21 @@
+{% extends '@PMDWorkflowDemo/item.html.twig' %}
+
+
+{% block content %}
+    <tr>
+        <td>
+            {{ object.id }}.
+        </td>
+        <td>{{ object.state }}</td>
+        <td>
+            <div class="btn-group btn-group-xs">
+                <a class="btn btn-default"
+                   href="{{ path('pmd_workflow_demo_invoice_read', object) }}"
+                   title="View #{{ object.id }}">
+                    <i class="glyphicon glyphicon-eye-open"></i>
+                    <span class="sr-only">View</span>
+                </a>
+            </div>
+        </td>
+    </tr>
+{% endblock %}

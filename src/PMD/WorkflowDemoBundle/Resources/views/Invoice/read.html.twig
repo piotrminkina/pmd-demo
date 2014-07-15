@@ -1,0 +1,13 @@
+{% extends '@PMDWorkflowDemo/layout.html.twig' %}
+
+
+{% block title %}
+    {{ object.id }}
+{% endblock %}
+
+{% block content %}
+    <dl>
+        <dt>State:</dt>
+        <dd>{{ object.state }}</dd>
+    </dl>
+{% endblock %}
