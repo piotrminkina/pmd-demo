@@ -67,6 +67,7 @@ doctrine:
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
         auto_mapping: true
+        naming_strategy: pmd_doctrine.orm_mapping.naming_strategy_underscore
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -80,8 +81,20 @@ swiftmailer:
 sensio_framework_extra:
     view: { annotations: false }
 
+# FOS Rest Configuration
+fos_rest:
+    body_listener: true
+    format_listener: true
+    view:
+        view_response_listener: "force"
+
 # PMD Frontend Configuration
-pmd_frontend: ~
+pmd_frontend:
+    listeners:
+        view_listener:
+            view_priority: 128
+            view_attribute: "_frontend[view]"
+            vars_attribute: "_frontend[vars]"
 
 # PMD State Machine Configuration
 pmd_state_machine:
