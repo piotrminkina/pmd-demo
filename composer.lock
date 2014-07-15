@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "13af1f379a6bee6aaca4330328172f9b",
+    "hash": "6dd0e81b075ead3dc95d4432c517cdde",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1379,12 +1379,24 @@
             "target-dir": "PMD/DoctrineBundle",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:piotrminkina/doctrine-bundle.git",
-                "reference": "feb2e5de320ac6c4ca27d38266e058fd8dc09d8d"
+                "url": "https://github.com/piotrminkina/doctrine-bundle.git",
+                "reference": "2ec515570a7f2b30e188132bdc8dbb281b15bcf9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/piotrminkina/doctrine-bundle/zipball/2ec515570a7f2b30e188132bdc8dbb281b15bcf9",
+                "reference": "2ec515570a7f2b30e188132bdc8dbb281b15bcf9",
+                "shasum": ""
             },
             "require": {
+                "doctrine/orm": "~2.2,>=2.2.3",
                 "php": ">=5.3.3",
-                "symfony/framework-bundle": "~2.4"
+                "symfony/config": "~2.5",
+                "symfony/dependency-injection": "~2.5",
+                "symfony/http-kernel": "~2.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -1397,8 +1409,9 @@
                     "PMD\\DoctrineBundle": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "proprietary"
+                "MIT"
             ],
             "authors": [
                 {
@@ -1407,8 +1420,8 @@
                     "homepage": "http://www.piotrminkina.pl"
                 }
             ],
-            "description": "Pre-configured Doctrine to works with future projects",
-            "time": "2014-05-19 17:43:49"
+            "description": "Symfony2 Doctrine Bundle that adds simple improvements to standard Doctrine Bundle",
+            "time": "2014-07-15 18:33:00"
         },
         {
             "name": "piotrminkina/frontend-bundle",
@@ -1521,12 +1534,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/piotrminkina/routing-bundle.git",
-                "reference": "a73eef727f96ea9e67492433df7e502d3228f7de"
+                "reference": "29e0743f76ab675c23c45db07b11553511c1e7ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piotrminkina/routing-bundle/zipball/a73eef727f96ea9e67492433df7e502d3228f7de",
-                "reference": "a73eef727f96ea9e67492433df7e502d3228f7de",
+                "url": "https://api.github.com/repos/piotrminkina/routing-bundle/zipball/29e0743f76ab675c23c45db07b11553511c1e7ba",
+                "reference": "29e0743f76ab675c23c45db07b11553511c1e7ba",
                 "shasum": ""
             },
             "require": {
@@ -1563,7 +1576,7 @@
                 }
             ],
             "description": "Symfony2 Routing Bundle that adds simple improvements to standard Symfony Routing Component",
-            "time": "2014-07-15 17:58:22"
+            "time": "2014-07-15 18:32:31"
         },
         {
             "name": "piotrminkina/state-machine-bundle",

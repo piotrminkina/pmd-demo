@@ -1,8 +1,8 @@
 {
-    "name": "piotrminkina/symfony-workflow-demo",
+    "name": "piotrminkina/workflow-demo",
     "license": "MIT",
     "type": "project",
-    "description": "The \"Symfony Workflow Demo\" distribution to show PMDWorkflowBundle in action",
+    "description": "Symfony2 Workflow Demo to show workflows implementations in action",
     "authors": [
         {
             "name": "Piotr Minkina",
@@ -40,12 +40,6 @@
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "http://packages.piotrminkina.pl"
-        }
-    ],
     "scripts": {
         "post-root-package-install": [
             "SymfonyStandard\\Composer::hookRootPackageInstall"

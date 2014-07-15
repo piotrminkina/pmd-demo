@@ -1,4 +1,4 @@
-Workflow Demo
+PMDWorkflowDemo
 =====================
 
 Symfony2 Workflow Demo to show workflows implementations in action

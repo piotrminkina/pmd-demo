@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Workflow Demo package.
+ * This file is part of the PMDWorkflowDemo package.
  *
  * (c) Piotr Minkina <projekty@piotrminkina.pl>
  *
