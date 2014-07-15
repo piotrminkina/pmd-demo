@@ -26,6 +26,10 @@
         "sensio/framework-extra-bundle": "~3.0",
         "incenteev/composer-parameter-handler": "~2.0",
 
+        "egulias/listeners-debug-command-bundle": "*",
+        "jms/serializer-bundle": "0.*",
+        "friendsofsymfony/rest-bundle": "1.4.*",
+
         "piotrminkina/frontend-bundle": "~0.1@dev",
         "piotrminkina/resources-resolver-bundle": "~0.1@dev",
         "piotrminkina/workflow-bundle": "~0.1@dev",

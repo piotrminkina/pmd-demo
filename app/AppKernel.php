@@ -40,6 +40,10 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
+            new Egulias\ListenersDebugCommandBundle\EguliasListenersDebugCommandBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
+
             new PMD\FrontendBundle\PMDFrontendBundle(),
             new PMD\ResourcesResolverBundle\PMDResourcesResolverBundle(),
             new PMD\WorkflowBundle\PMDWorkflowBundle(),
