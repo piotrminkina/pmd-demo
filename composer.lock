@@ -1380,12 +1380,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/piotrminkina/doctrine-bundle.git",
-                "reference": "2ec515570a7f2b30e188132bdc8dbb281b15bcf9"
+                "reference": "4823d497cf93a06f8e662a31bc555a453d69be74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piotrminkina/doctrine-bundle/zipball/2ec515570a7f2b30e188132bdc8dbb281b15bcf9",
-                "reference": "2ec515570a7f2b30e188132bdc8dbb281b15bcf9",
+                "url": "https://api.github.com/repos/piotrminkina/doctrine-bundle/zipball/4823d497cf93a06f8e662a31bc555a453d69be74",
+                "reference": "4823d497cf93a06f8e662a31bc555a453d69be74",
                 "shasum": ""
             },
             "require": {
@@ -1397,6 +1397,9 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "~3.7"
+            },
+            "suggest": {
+                "doctrine/doctrine-bundle": "~1.2"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -1421,7 +1424,7 @@
                 }
             ],
             "description": "Symfony2 Doctrine Bundle that adds simple improvements to standard Doctrine Bundle",
-            "time": "2014-07-15 18:33:00"
+            "time": "2014-07-15 18:59:52"
         },
         {
             "name": "piotrminkina/frontend-bundle",
@@ -1585,12 +1588,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/piotrminkina/state-machine-bundle.git",
-                "reference": "264f0885992f7736b233623a29ad05d8d98174f2"
+                "reference": "f488ae1f0be62d854c5cf872cc7b14713cd3f932"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piotrminkina/state-machine-bundle/zipball/264f0885992f7736b233623a29ad05d8d98174f2",
-                "reference": "264f0885992f7736b233623a29ad05d8d98174f2",
+                "url": "https://api.github.com/repos/piotrminkina/state-machine-bundle/zipball/f488ae1f0be62d854c5cf872cc7b14713cd3f932",
+                "reference": "f488ae1f0be62d854c5cf872cc7b14713cd3f932",
                 "shasum": ""
             },
             "require": {
@@ -1626,7 +1629,7 @@
                 }
             ],
             "description": "Symfony2 State Machine Bundle to define state machines built with states, transitions and actions",
-            "time": "2014-07-14 18:49:23"
+            "time": "2014-07-16 19:12:38"
         },
         {
             "name": "piotrminkina/workflow-bundle",
@@ -1635,12 +1638,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/piotrminkina/workflow-bundle.git",
-                "reference": "ea074b9b5bcb4ab01973a6e39410ff971f542496"
+                "reference": "929b9fc0e2cbca32801a2e258edf9fcd81e47c6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piotrminkina/workflow-bundle/zipball/ea074b9b5bcb4ab01973a6e39410ff971f542496",
-                "reference": "ea074b9b5bcb4ab01973a6e39410ff971f542496",
+                "url": "https://api.github.com/repos/piotrminkina/workflow-bundle/zipball/929b9fc0e2cbca32801a2e258edf9fcd81e47c6e",
+                "reference": "929b9fc0e2cbca32801a2e258edf9fcd81e47c6e",
                 "shasum": ""
             },
             "require": {
@@ -1674,7 +1677,7 @@
                 }
             ],
             "description": "Symfony2 Workflow Bundle to define workflows to handle the volatile and changing business processes",
-            "time": "2014-07-12 18:58:54"
+            "time": "2014-07-15 19:04:03"
         },
         {
             "name": "psr/log",
@@ -1716,17 +1719,17 @@
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v3.0.1",
+            "version": "v3.0.2",
             "target-dir": "Sensio/Bundle/DistributionBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "e9caa300faf95076c8e27693f3fdb0bb6e3148c0"
+                "reference": "67b34359f91c25ad36b960f66a287df0615d7c54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/e9caa300faf95076c8e27693f3fdb0bb6e3148c0",
-                "reference": "e9caa300faf95076c8e27693f3fdb0bb6e3148c0",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/67b34359f91c25ad36b960f66a287df0615d7c54",
+                "reference": "67b34359f91c25ad36b960f66a287df0615d7c54",
                 "shasum": ""
             },
             "require": {
@@ -1771,7 +1774,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2014-06-06 02:53:20"
+            "time": "2014-07-16 07:46:27"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -2116,16 +2119,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.5.1",
+            "version": "v2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "e3d2844abc988bc467bb1593cd340700096b0ac0"
+                "reference": "e66ee967571b89234c90946fe0d50dad195ad29c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/e3d2844abc988bc467bb1593cd340700096b0ac0",
-                "reference": "e3d2844abc988bc467bb1593cd340700096b0ac0",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/e66ee967571b89234c90946fe0d50dad195ad29c",
+                "reference": "e66ee967571b89234c90946fe0d50dad195ad29c",
                 "shasum": ""
             },
             "require": {
@@ -2228,7 +2231,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-07-08 14:42:08"
+            "time": "2014-07-15 15:39:46"
         },
         {
             "name": "twig/extensions",
