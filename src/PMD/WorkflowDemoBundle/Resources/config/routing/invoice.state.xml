@@ -15,8 +15,7 @@
             http://symfony.com/schema/routing/routing-1.0.xsd">
 
     <route id="pmd_workflow_demo_invoice_state"
-           path="/{id}/{_state_action}"
-           methods="GET|POST">
+           path="/{id}/{_state_action}">
         <default key="_controller">pmd_state_machine.controller.state_controller:handleAction</default>
         <requirement key="_state_action">[\w-]+</requirement>
     </route>
