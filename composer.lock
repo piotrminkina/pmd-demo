@@ -729,17 +729,17 @@
         },
         {
             "name": "friendsofsymfony/rest-bundle",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "target-dir": "FOS/RestBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "d37f4410e6a97e81c720840b56e35c3a44942723"
+                "reference": "e3a28ebf74724a51a31d6142b002c0c9652f71a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/d37f4410e6a97e81c720840b56e35c3a44942723",
-                "reference": "d37f4410e6a97e81c720840b56e35c3a44942723",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/e3a28ebf74724a51a31d6142b002c0c9652f71a4",
+                "reference": "e3a28ebf74724a51a31d6142b002c0c9652f71a4",
                 "shasum": ""
             },
             "require": {
@@ -804,7 +804,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-06-04 13:11:41"
+            "time": "2014-07-11 21:09:03"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1588,12 +1588,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/piotrminkina/state-machine-bundle.git",
-                "reference": "f488ae1f0be62d854c5cf872cc7b14713cd3f932"
+                "reference": "2138863c00a786aabefdb048dfc72f5ce7be1790"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piotrminkina/state-machine-bundle/zipball/f488ae1f0be62d854c5cf872cc7b14713cd3f932",
-                "reference": "f488ae1f0be62d854c5cf872cc7b14713cd3f932",
+                "url": "https://api.github.com/repos/piotrminkina/state-machine-bundle/zipball/2138863c00a786aabefdb048dfc72f5ce7be1790",
+                "reference": "2138863c00a786aabefdb048dfc72f5ce7be1790",
                 "shasum": ""
             },
             "require": {
@@ -1629,7 +1629,7 @@
                 }
             ],
             "description": "Symfony2 State Machine Bundle to define state machines built with states, transitions and actions",
-            "time": "2014-07-16 19:12:38"
+            "time": "2014-07-17 20:58:02"
         },
         {
             "name": "piotrminkina/workflow-bundle",
