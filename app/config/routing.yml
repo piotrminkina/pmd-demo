@@ -2,6 +2,7 @@ pmd_workflow_demo_invoice:
     resource: @PMDWorkflowDemoBundle/Resources/config/routing/invoice.xml
     prefix: /
     defaults:
+        _state_process: invoice_management
         _frontend:
             view:
                 list: @PMDWorkflowDemo\Invoice\list.html.twig
