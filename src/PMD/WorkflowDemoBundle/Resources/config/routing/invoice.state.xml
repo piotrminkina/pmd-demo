@@ -14,6 +14,10 @@
         xsi:schemaLocation="http://symfony.com/schema/routing
             http://symfony.com/schema/routing/routing-1.0.xsd">
 
-    <import resource="invoice.crud.xml" prefix="/"/>
-    <import resource="invoice.state.xml" prefix="/"/>
+    <route id="pmd_workflow_demo_invoice_state"
+           path="/{id}/{action}"
+           methods="GET|POST">
+        <default key="_controller">pmd_state_machine.controller.state_controller:handleAction</default>
+        <requirement key="action">[\w-]+</requirement>
+    </route>
 </routes>
