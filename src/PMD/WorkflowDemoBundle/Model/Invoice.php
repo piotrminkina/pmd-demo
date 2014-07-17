@@ -27,7 +27,7 @@ class Invoice implements InvoiceInterface
     /**
      * @var string
      */
-    protected $state;
+    protected $state = self::STATE_REGISTERED;
 
     /**
      * @return int
