@@ -100,35 +100,27 @@ pmd_frontend:
 pmd_state_machine:
     definitions:
         invoice_management:
-            states:
-                registered:
-                    transitions:
-                        accept: accepted
-                        correct: corrected
-                        cancel: canceled
+            registered:
+                accept: accepted
+                correct: corrected
+                cancel: canceled
 
-                corrected:
-                    transitions:
-                        cancel: canceled
-                        pay: paid
-                        expiry: expired
+            corrected:
+                cancel: canceled
+                pay: paid
+                expiry: expired
 
-                accepted:
-                    transitions:
-                        pay: paid
-                        expiry: expired
+            accepted:
+                pay: paid
+                expiry: expired
 
-                paid:
-                    transitions:
-                        remove: removed
+            paid:
+                remove: removed
 
-                canceled:
-                    transitions:
-                        remove: removed
+            canceled:
+                remove: removed
 
-                removed:
-                    transitions: ~
+            removed: ~
 
-                expired:
-                    transitions:
-                        pay: paid
+            expired:
+                pay: paid
