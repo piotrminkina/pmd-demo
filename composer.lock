@@ -1588,12 +1588,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/piotrminkina/state-machine-bundle.git",
-                "reference": "b4f45fd4afbacb75d0e7cccc179e23e1e76c4034"
+                "reference": "bb27d0968f90827c8beff5cd805e0e86d56497c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piotrminkina/state-machine-bundle/zipball/b4f45fd4afbacb75d0e7cccc179e23e1e76c4034",
-                "reference": "b4f45fd4afbacb75d0e7cccc179e23e1e76c4034",
+                "url": "https://api.github.com/repos/piotrminkina/state-machine-bundle/zipball/bb27d0968f90827c8beff5cd805e0e86d56497c9",
+                "reference": "bb27d0968f90827c8beff5cd805e0e86d56497c9",
                 "shasum": ""
             },
             "require": {
@@ -1601,10 +1601,12 @@
                 "php": ">=5.3.3",
                 "symfony/config": "~2.5",
                 "symfony/dependency-injection": "~2.5",
+                "symfony/form": "~2.5",
                 "symfony/http-kernel": "~2.5",
                 "symfony/options-resolver": "~2.5",
                 "symfony/routing": "~2.5",
                 "symfony/security": "~2.5",
+                "symfony/templating": "~2.5",
                 "twig/twig": "1.*"
             },
             "require-dev": {
@@ -1633,7 +1635,7 @@
                 }
             ],
             "description": "Symfony2 State Machine Bundle to define state machines built with states, transitions and actions",
-            "time": "2014-07-22 05:37:14"
+            "time": "2014-07-22 08:04:20"
         },
         {
             "name": "piotrminkina/workflow-bundle",
