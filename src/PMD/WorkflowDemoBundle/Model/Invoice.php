@@ -27,6 +27,11 @@ class Invoice implements InvoiceInterface
     /**
      * @var string
      */
+    protected $name;
+
+    /**
+     * @var string
+     */
     protected $state = self::STATE_REGISTERED;
 
     /**
@@ -35,6 +40,25 @@ class Invoice implements InvoiceInterface
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * @param string $name
+     * @return Invoice
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
     }
 
     /**

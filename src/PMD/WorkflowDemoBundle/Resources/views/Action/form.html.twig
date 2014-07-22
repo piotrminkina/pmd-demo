@@ -1,0 +1,25 @@
+{% extends '@PMDWorkflowDemo/layout.html.twig' %}
+
+
+{% block title %}
+    {{ object.id }}
+{% endblock %}
+
+{% block content %}
+    {{ form_start(form) }}
+
+    {{ form_widget(form) }}
+
+    <div class="btn-toolbar">
+        <button type="submit" class="btn btn-primary">
+            <i class="glyphicon glyphicon-ok"></i>
+            Submit
+        </button>
+        or
+        <a href="{{ path('pmd_workflow_demo_invoice_read', object) }}">
+            Cancel
+        </a>
+    </div>
+
+    {{ form_end(form) }}
+{% endblock %}

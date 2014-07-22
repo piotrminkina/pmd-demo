@@ -16,6 +16,7 @@
             <generator strategy="AUTO" />
         </id>
 
+        <field name="name" type="string"/>
         <field name="state" type="string"/>
     </entity>
 

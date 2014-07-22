@@ -15,6 +15,7 @@
 
     <parameters>
         <parameter key="pmd_workflow_demo.controller.state_controller.class">PMD\WorkflowDemoBundle\Controller\StateController</parameter>
+        <parameter key="pmd_workflow_demo.form.invoice_type.class">PMD\WorkflowDemoBundle\Form\InvoiceType</parameter>
         <parameter key="pmd_workflow_demo.model.invoice.class">PMD\WorkflowDemoBundle\Model\Invoice</parameter>
         <parameter key="pmd_workflow_demo.model.invoice_repository.class">Doctrine\Common\Persistence\ObjectRepository</parameter>
     </parameters>
@@ -27,6 +28,11 @@
                       id="pmd_workflow_demo.controller.state_controller.inner"/>
             <argument type="service"
                       id="doctrine.orm.default_entity_manager"/>
+        </service>
+
+        <service id="pmd_workflow_demo.form.invoice_type"
+                 class="%pmd_workflow_demo.form.invoice_type.class%">
+            <tag name="form.type" alias="pmd_workflow_demo_invoice"/>
         </service>
 
         <service id="pmd_workflow_demo.model.invoice_repository"

@@ -1,7 +1,17 @@
 security:
+    access_decision_manager:
+        allow_if_all_abstain: true
+
     providers:
         in_memory:
-            memory: ~
+            memory:
+                users:
+                    user:
+                        password: user
+                        roles: "ROLE_USER"
+                    admin:
+                        password: admin
+                        roles: "ROLE_ADMIN"
 
     firewalls:
         dev:
