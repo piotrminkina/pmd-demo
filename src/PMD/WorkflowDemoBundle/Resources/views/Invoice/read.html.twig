@@ -7,6 +7,14 @@
     {{ object.id }}
 {% endblock %}
 
+{% block controls %}
+    <a class="btn btn-default pull-right"
+       href="{{ path('pmd_workflow_demo_invoice_list') }}">
+        <i class="glyphicon glyphicon-list"></i>
+        Back to the List
+    </a>
+{% endblock %}
+
 {% block content %}
     <dl>
         <dt>State:</dt>

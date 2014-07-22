@@ -1,6 +1,12 @@
 {% extends 'base.html.twig' %}
 
 
+{% block block_header_content %}
+    {% block controls %}{% endblock %}
+
+    {{ parent() }}
+{% endblock %}
+
 {% block body %}
     {% block content %}{% endblock %}
 {% endblock %}
