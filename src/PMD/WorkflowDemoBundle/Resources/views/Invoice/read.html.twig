@@ -15,7 +15,7 @@
 {% endblock %}
 
 {% block footer %}
-    <div class="btn-group">
+    <form method="post" action="{{ path(app.request.attributes.get("_route"), app.request.attributes.get("_route_params")) }}" class="btn-group">
         {{ tokens(object, 'pmd_workflow_demo_invoice_state', {id: object.id}, {class: 'btn btn-default'}) }}
-    </div>
+    </form>
 {% endblock %}
