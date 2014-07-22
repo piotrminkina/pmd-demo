@@ -22,15 +22,16 @@
         <default key="_controller">PMDWorkflowDemoBundle:CRUD:create</default>
     </route>
 
+    <!--
     <route id="pmd_workflow_demo_invoice_create" path="/" methods="POST">
         <default key="_controller">PMDWorkflowDemoBundle:CRUD:create</default>
     </route>
-
+      -->
     <route id="pmd_workflow_demo_invoice_read" path="/{id}" methods="GET">
         <default key="_controller">PMDWorkflowDemoBundle:CRUD:read</default>
         <requirement key="id">\d+</requirement>
     </route>
-
+    <!--
     <route id="pmd_workflow_demo_invoice_edit" path="/{id}/edit" methods="GET">
         <default key="_controller">PMDWorkflowDemoBundle:CRUD:update</default>
         <requirement key="id">\d+</requirement>
@@ -50,4 +51,5 @@
         <default key="_controller">PMDWorkflowDemoBundle:CRUD:delete</default>
         <requirement key="id">\d+</requirement>
     </route>
+      -->
 </routes>

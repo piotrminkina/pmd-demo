@@ -14,11 +14,21 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
+        <parameter key="pmd_workflow_demo.controller.state_controller.class">PMD\WorkflowDemoBundle\Controller\StateController</parameter>
         <parameter key="pmd_workflow_demo.model.invoice.class">PMD\WorkflowDemoBundle\Model\Invoice</parameter>
         <parameter key="pmd_workflow_demo.model.invoice_repository.class">Doctrine\Common\Persistence\ObjectRepository</parameter>
     </parameters>
 
     <services>
+        <service id="pmd_workflow_demo.controller.state_controller"
+                 class="%pmd_workflow_demo.controller.state_controller.class%"
+                 decorates="pmd_state_machine.controller.state_controller">
+            <argument type="service"
+                      id="pmd_workflow_demo.controller.state_controller.inner"/>
+            <argument type="service"
+                      id="doctrine.orm.default_entity_manager"/>
+        </service>
+
         <service id="pmd_workflow_demo.model.invoice_repository"
                  class="%pmd_workflow_demo.model.invoice_repository.class%"
                  factory-service="doctrine.orm.default_entity_manager"

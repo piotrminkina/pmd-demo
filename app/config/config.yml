@@ -101,13 +101,37 @@ pmd_state_machine:
     definitions:
         invoice_management:
             registered:
-                accept: accepted
-                correct: corrected
+                accept:
+                    to: accepted
+#                    guards:
+#                        roles:
+#                            view:
+#                                - ROLE_USER
+#                            create:
+#                                - ROLE_USER
+#                            consume:
+#                                - ROLE_ADMIN
+#                    actions:
+#                        form:
+#                            type: accept_type
+                correct:
+                    to: corrected
+#                    guards:
+#                        roles:
+#                            view:
+#                                - ROLE_USER
+#                            create:
+#                                - ROLE_USER
+#                            consume:
+#                                - ROLE_ADMIN
+#                    actions:
+#                        form:
+#                            type: accept_type
                 cancel: canceled
 
             corrected:
-                cancel: canceled
                 pay: paid
+                cancel: canceled
                 expiry: expired
 
             accepted:

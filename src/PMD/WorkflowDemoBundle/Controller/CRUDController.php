@@ -35,7 +35,11 @@ class CRUDController
      */
     public function createAction()
     {
+        // use handler to handle request and create object
+        $object = null;
+
         return array(
+            'object' => $object,
         );
     }
 
@@ -56,6 +60,8 @@ class CRUDController
      */
     public function updateAction($object)
     {
+        // use handler to handle request and update object
+
         return array(
             'object' => $object,
         );
@@ -67,6 +73,8 @@ class CRUDController
      */
     public function deleteAction($object)
     {
+        // use handler to handle request and delete object
+
         return array(
             'object' => $object,
         );
