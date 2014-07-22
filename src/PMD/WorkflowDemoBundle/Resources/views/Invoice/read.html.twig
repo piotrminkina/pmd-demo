@@ -1,6 +1,8 @@
 {% extends '@PMDWorkflowDemo/layout.html.twig' %}
 
 
+{% from '@PMDStateMachine/macros.html.twig' import tokens %}
+
 {% block title %}
     {{ object.id }}
 {% endblock %}
@@ -10,4 +12,10 @@
         <dt>State:</dt>
         <dd>{{ object.state }}</dd>
     </dl>
+{% endblock %}
+
+{% block footer %}
+    <div class="btn-group">
+        {{ tokens(object, 'pmd_workflow_demo_invoice_state', {id: object.id}, {class: 'btn btn-default'}) }}
+    </div>
 {% endblock %}

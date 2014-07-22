@@ -3,6 +3,7 @@ pmd_workflow_demo_invoice:
     prefix: /
     defaults:
         _state_process: invoice_management
+        _state_response: [ pmd_workflow_demo_invoice_read, $object ]
         _frontend:
             view:
                 list: @PMDWorkflowDemo\Invoice\list.html.twig
