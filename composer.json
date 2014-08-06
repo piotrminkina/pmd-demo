@@ -1,8 +1,8 @@
 {
-    "name": "piotrminkina/workflow-demo",
+    "name": "piotrminkina/pmd-demo",
     "license": "MIT",
     "type": "project",
-    "description": "Symfony2 Workflow Demo to show workflows implementations in action",
+    "description": "Symfony2 Demo to show PMD bundles in action",
     "authors": [
         {
             "name": "Piotr Minkina",
