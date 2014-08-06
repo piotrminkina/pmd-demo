@@ -30,12 +30,7 @@
         "jms/serializer-bundle": "0.*",
         "friendsofsymfony/rest-bundle": "1.4.*",
 
-        "piotrminkina/doctrine-bundle": "~0.1@dev",
-        "piotrminkina/routing-bundle": "~0.1@dev",
-        "piotrminkina/resources-resolver-bundle": "~0.1@dev",
-        "piotrminkina/workflow-bundle": "~0.1@dev",
-        "piotrminkina/state-machine-bundle": "~0.1@dev",
-        "piotrminkina/frontend-bundle": "~0.1@dev"
+        "piotrminkina/pmd": "~0.1@dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

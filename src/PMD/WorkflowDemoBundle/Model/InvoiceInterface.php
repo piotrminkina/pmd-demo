@@ -11,7 +11,7 @@
 
 namespace PMD\WorkflowDemoBundle\Model;
 
-use PMD\StateMachineBundle\Model\StatefulInterface;
+use PMD\Bundle\StateMachineBundle\Model\StatefulInterface;
 
 /**
  * Interface InvoiceInterface

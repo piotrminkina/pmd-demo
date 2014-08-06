@@ -14,8 +14,8 @@ namespace PMD\WorkflowDemoBundle\Controller;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use PMD\StateMachineBundle\Model\StatefulInterface;
-use PMD\StateMachineBundle\Controller\StateController as BaseStateController;
+use PMD\Bundle\StateMachineBundle\Model\StatefulInterface;
+use PMD\Bundle\StateMachineBundle\Controller\StateController as BaseStateController;
 
 /**
  * This is temporary solution to persist object state changes, I think
