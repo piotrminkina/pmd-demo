@@ -1379,12 +1379,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/piotrminkina/pmd.git",
-                "reference": "a1a84e120fa545d332d05d58bd31d9a8d42f8d72"
+                "reference": "5f907d17aa50646766e693f81f502ce0f12bfdd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piotrminkina/pmd/zipball/a1a84e120fa545d332d05d58bd31d9a8d42f8d72",
-                "reference": "a1a84e120fa545d332d05d58bd31d9a8d42f8d72",
+                "url": "https://api.github.com/repos/piotrminkina/pmd/zipball/5f907d17aa50646766e693f81f502ce0f12bfdd8",
+                "reference": "5f907d17aa50646766e693f81f502ce0f12bfdd8",
                 "shasum": ""
             },
             "require": {
@@ -1428,7 +1428,7 @@
                 }
             ],
             "description": "A set of customizable Symfony2 bundles to rapidly develop web applications",
-            "time": "2014-08-06 17:14:26"
+            "time": "2014-08-07 22:02:06"
         },
         {
             "name": "psr/log",
