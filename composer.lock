@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3bfc0ac38715878fa966511c2ecd6c30",
+    "hash": "009c970bdc62022463ac7cd6f4e3dec3",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -678,24 +678,27 @@
         },
         {
             "name": "egulias/listeners-debug-command-bundle",
-            "version": "2.0.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/ListenersDebugCommandBundle.git",
-                "reference": "4db12f4212690276cf97a14a8f7f58c4e50972a7"
+                "reference": "aecb3a98e1383f0b2a70c5ee50c8792b15e83c8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/ListenersDebugCommandBundle/zipball/4db12f4212690276cf97a14a8f7f58c4e50972a7",
-                "reference": "4db12f4212690276cf97a14a8f7f58c4e50972a7",
+                "url": "https://api.github.com/repos/egulias/ListenersDebugCommandBundle/zipball/aecb3a98e1383f0b2a70c5ee50c8792b15e83c8d",
+                "reference": "aecb3a98e1383f0b2a70c5ee50c8792b15e83c8d",
                 "shasum": ""
             },
             "require": {
                 "egulias/listeners-debug": "1.0.*",
-                "symfony/symfony": ">=2.3"
+                "symfony/console": "~2.3",
+                "symfony/dependency-injection": "~2.3",
+                "symfony/framework-bundle": "~2.3",
+                "symfony/http-kernel": "~2.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.0.*",
+                "phpunit/phpunit": ">=3.7",
                 "satooshi/php-coveralls": "dev-master"
             },
             "type": "symfony-bundle",
@@ -725,21 +728,21 @@
                 "events",
                 "listener"
             ],
-            "time": "2014-05-25 14:35:00"
+            "time": "2014-08-10 18:58:16"
         },
         {
             "name": "friendsofsymfony/rest-bundle",
-            "version": "1.4.1",
+            "version": "1.4.2",
             "target-dir": "FOS/RestBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "e3a28ebf74724a51a31d6142b002c0c9652f71a4"
+                "reference": "0649a4c1d8cecd27885b09c1cddddb497a0d3ca3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/e3a28ebf74724a51a31d6142b002c0c9652f71a4",
-                "reference": "e3a28ebf74724a51a31d6142b002c0c9652f71a4",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/0649a4c1d8cecd27885b09c1cddddb497a0d3ca3",
+                "reference": "0649a4c1d8cecd27885b09c1cddddb497a0d3ca3",
                 "shasum": ""
             },
             "require": {
@@ -755,7 +758,7 @@
                 "jms/serializer-bundle": "<0.11"
             },
             "require-dev": {
-                "jms/serializer-bundle": "0.12.*",
+                "jms/serializer-bundle": "~0.12",
                 "sensio/framework-extra-bundle": "~2.2",
                 "symfony/form": "~2.2",
                 "symfony/security": "~2.2",
@@ -764,7 +767,7 @@
                 "symfony/yaml": "~2.2"
             },
             "suggest": {
-                "jms/serializer-bundle": "Add support for advanced serialization capabilities, recommended, requires 0.12.*",
+                "jms/serializer-bundle": "Add support for advanced serialization capabilities, recommended, requires ~0.12",
                 "sensio/framework-extra-bundle": "Add support for route annotations and the view response listener",
                 "symfony/serializer": "Add support for basic serialization capabilities and xml decoding, requires ~2.2",
                 "symfony/validator": "Add support for validation capabilities in the ParamFetcher, requires ~2.2"
@@ -795,8 +798,7 @@
                 },
                 {
                     "name": "Konstantin Kudryashov",
-                    "email": "ever.zet@gmail.com",
-                    "homepage": "http://everzet.com"
+                    "email": "ever.zet@gmail.com"
                 }
             ],
             "description": "This Bundle provides various tools to rapidly develop RESTful API's with Symfony2",
@@ -804,7 +806,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-07-11 21:09:03"
+            "time": "2014-08-15 12:18:54"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -2217,6 +2219,166 @@
     ],
     "packages-dev": [
         {
+            "name": "fzaninotto/faker",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzaninotto/Faker.git",
+                "reference": "010c7efedd88bf31141a02719f51fb44c732d5a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/010c7efedd88bf31141a02719f51fb44c732d5a0",
+                "reference": "010c7efedd88bf31141a02719f51fb44c732d5a0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": [
+
+                ]
+            },
+            "autoload": {
+                "psr-0": {
+                    "Faker": "src/",
+                    "Faker\\PHPUnit": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "time": "2014-06-04 14:43:02"
+        },
+        {
+            "name": "h4cc/alice-fixtures-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/h4cc/AliceFixturesBundle.git",
+                "reference": "9a38e0de5e9570f5ffcddfa2733506f70fe98ff7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/h4cc/AliceFixturesBundle/zipball/9a38e0de5e9570f5ffcddfa2733506f70fe98ff7",
+                "reference": "9a38e0de5e9570f5ffcddfa2733506f70fe98ff7",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/common": "~2.1",
+                "nelmio/alice": "~1.5",
+                "php": ">=5.3.0",
+                "psr/log": "~1.0",
+                "symfony/finder": "~2.0"
+            },
+            "require-dev": {
+                "doctrine/mongodb-odm": "1.0.*@dev",
+                "doctrine/mongodb-odm-bundle": "3.0.*@dev",
+                "doctrine/orm": "~2.1",
+                "phpunit/phpunit": "~4.0",
+                "symfony/framework-bundle": "~2.1"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "h4cc\\AliceFixturesBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Julius Beckmann",
+                    "email": "github@h4cc.de"
+                }
+            ],
+            "description": "Symfony2 Bundle for loading fixture data with the Alice library.",
+            "keywords": [
+                "Symfony2",
+                "alice",
+                "doctrine",
+                "fixtures",
+                "loader",
+                "mongodb",
+                "orm"
+            ],
+            "time": "2014-08-09 14:16:25"
+        },
+        {
+            "name": "nelmio/alice",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nelmio/alice.git",
+                "reference": "0730001c3be46dedf393ef4168d6239d9969c61c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nelmio/alice/zipball/0730001c3be46dedf393ef4168d6239d9969c61c",
+                "reference": "0730001c3be46dedf393ef4168d6239d9969c61c",
+                "shasum": ""
+            },
+            "require": {
+                "fzaninotto/faker": "~1.0",
+                "php": ">=5.3",
+                "symfony/yaml": "~2.0"
+            },
+            "require-dev": {
+                "doctrine/common": "~2.3",
+                "phpunit/phpunit": "3.7.*",
+                "symfony/property-access": "~2.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.7.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Nelmio\\Alice\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nelmio",
+                    "homepage": "http://nelm.io"
+                }
+            ],
+            "description": "Expressive fixtures generator",
+            "keywords": [
+                "Fixture",
+                "data",
+                "orm",
+                "test"
+            ],
+            "time": "2014-04-24 13:11:29"
+        },
+        {
             "name": "sensio/generator-bundle",
             "version": "v2.3.5",
             "target-dir": "Sensio/Bundle/GeneratorBundle",
@@ -2272,7 +2434,8 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "piotrminkina/pmd": 20
+        "piotrminkina/pmd": 20,
+        "h4cc/alice-fixtures-bundle": 20
     },
     "prefer-stable": false,
     "platform": {

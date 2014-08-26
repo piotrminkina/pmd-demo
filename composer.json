@@ -33,7 +33,9 @@
         "piotrminkina/pmd": "~0.1@dev"
     },
     "require-dev": {
-        "sensio/generator-bundle": "~2.3"
+        "sensio/generator-bundle": "~2.3",
+
+        "h4cc/alice-fixtures-bundle": "*@dev"
     },
     "scripts": {
         "post-root-package-install": [
