@@ -18,6 +18,7 @@
         <parameter key="pmd_workflow_demo.form.invoice_type.class">PMD\WorkflowDemoBundle\Form\InvoiceType</parameter>
         <parameter key="pmd_workflow_demo.model.invoice.class">PMD\WorkflowDemoBundle\Model\Invoice</parameter>
         <parameter key="pmd_workflow_demo.model.invoice_repository.class">Doctrine\Common\Persistence\ObjectRepository</parameter>
+        <parameter key="pmd_workflow_demo.data_fixtures.alice_provider.invoice_provider.class">PMD\WorkflowDemoBundle\DataFixtures\Alice\Provider\InvoiceProvider</parameter>
     </parameters>
 
     <services>
@@ -40,6 +41,11 @@
                  factory-service="doctrine.orm.default_entity_manager"
                  factory-method="getRepository">
             <argument type="string">%pmd_workflow_demo.model.invoice.class%</argument>
+        </service>
+
+        <service id="pmd_workflow_demo.data_fixtures.alice_provider.invoice_provider"
+                 class="%pmd_workflow_demo.data_fixtures.alice_provider.invoice_provider.class%">
+            <tag name="h4cc_alice_fixtures.provider"/>
         </service>
     </services>
 </container>
