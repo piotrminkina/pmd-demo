@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+
+<!--
+  - This file is part of the PMDDemo package.
+  -
+  - (c) Piotr Minkina <projekty@piotrminkina.pl>
+  -
+  - For the full copyright and license information, please view the LICENSE
+  - file that was distributed with this source code.
+ -->
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="pmd_demo_invoice.controller.state_controller.class">PMD\Bundle\Demo\InvoiceBundle\Controller\StateController</parameter>
+        <parameter key="pmd_demo_invoice.form.invoice_type.class">PMD\Bundle\Demo\InvoiceBundle\Form\InvoiceType</parameter>
+        <parameter key="pmd_demo_invoice.model.invoice.class">PMD\Bundle\Demo\InvoiceBundle\Model\Invoice</parameter>
+        <parameter key="pmd_demo_invoice.model.invoice_repository.class">Doctrine\Common\Persistence\ObjectRepository</parameter>
+        <parameter key="pmd_demo_invoice.data_fixtures.alice_provider.invoice_provider.class">PMD\Bundle\Demo\InvoiceBundle\DataFixtures\Alice\Provider\InvoiceProvider</parameter>
+    </parameters>
+
+    <services>
+        <service id="pmd_demo_invoice.controller.state_controller"
+                 class="%pmd_demo_invoice.controller.state_controller.class%"
+                 decorates="pmd_state_machine.controller.state_controller">
+            <argument type="service"
+                      id="pmd_demo_invoice.controller.state_controller.inner"/>
+            <argument type="service"
+                      id="doctrine.orm.default_entity_manager"/>
+        </service>
+
+        <service id="pmd_demo_invoice.form.invoice_type"
+                 class="%pmd_demo_invoice.form.invoice_type.class%">
+            <tag name="form.type" alias="pmd_demo_invoice"/>
+        </service>
+
+        <service id="pmd_demo_invoice.model.invoice_repository"
+                 class="%pmd_demo_invoice.model.invoice_repository.class%"
+                 factory-service="doctrine.orm.default_entity_manager"
+                 factory-method="getRepository">
+            <argument type="string">%pmd_demo_invoice.model.invoice.class%</argument>
+        </service>
+
+        <service id="pmd_demo_invoice.data_fixtures.alice_provider.invoice_provider"
+                 class="%pmd_demo_invoice.data_fixtures.alice_provider.invoice_provider.class%">
+            <tag name="h4cc_alice_fixtures.provider"/>
+        </service>
+    </services>
+</container>

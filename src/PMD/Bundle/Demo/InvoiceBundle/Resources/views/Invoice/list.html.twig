@@ -1,0 +1,27 @@
+{% extends '@PMDDemoInvoice/layout.html.twig' %}
+
+
+{% block title %}
+    Invoices List
+{% endblock %}
+
+{% block content %}
+    <table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>State</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for object in objects %}
+            {% include '@PMDDemoInvoice/Invoice/read/item.html.twig' with {
+                object: object
+            } only %}
+        {% endfor %}
+    </tbody>
+    </table>
+{% endblock %}

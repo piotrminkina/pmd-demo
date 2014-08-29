@@ -109,8 +109,8 @@ pmd_state_machine:
                                 - ROLE_ADMIN
                     actions:
                         form:
-                            form_type: pmd_workflow_demo_invoice
-                            form_view: @PMDWorkflowDemo\Action\form.html.twig
+                            form_type: pmd_demo_invoice
+                            form_view: @PMDDemoInvoice\Action\form.html.twig
                 correct:
                     to: corrected
                     guards:
@@ -119,8 +119,8 @@ pmd_state_machine:
                                 - ROLE_ADMIN
                     actions:
                         form:
-                            form_type: pmd_workflow_demo_invoice
-                            form_view: @PMDWorkflowDemo\Action\form.html.twig
+                            form_type: pmd_demo_invoice
+                            form_view: @PMDDemoInvoice\Action\form.html.twig
                 cancel: canceled
 
             corrected:
@@ -128,8 +128,8 @@ pmd_state_machine:
                     to: paid
                     actions:
                         form:
-                            form_type: pmd_workflow_demo_invoice
-                            form_view: @PMDWorkflowDemo\Action\form.html.twig
+                            form_type: pmd_demo_invoice
+                            form_view: @PMDDemoInvoice\Action\form.html.twig
                 cancel: canceled
                 expiry: expired
 
@@ -138,8 +138,8 @@ pmd_state_machine:
                     to: paid
                     actions:
                         form:
-                            form_type: pmd_workflow_demo_invoice
-                            form_view: @PMDWorkflowDemo\Action\form.html.twig
+                            form_type: pmd_demo_invoice
+                            form_view: @PMDDemoInvoice\Action\form.html.twig
                 expiry: expired
 
             paid:
@@ -155,5 +155,5 @@ pmd_state_machine:
                     to: paid
                     actions:
                         form:
-                            form_type: pmd_workflow_demo_invoice
-                            form_view: @PMDWorkflowDemo\Action\form.html.twig
+                            form_type: pmd_demo_invoice
+                            form_view: @PMDDemoInvoice\Action\form.html.twig

@@ -1,17 +1,17 @@
-pmd_workflow_demo_invoice:
-    resource: @PMDWorkflowDemoBundle/Resources/config/routing/invoice.xml
+pmd_demo_invoice:
+    resource: @PMDDemoInvoiceBundle/Resources/config/routing/invoice.xml
     prefix: /
     defaults:
         _state_process: invoice_management
-        _state_response: [ pmd_workflow_demo_invoice_read, $object ]
+        _state_response: [ pmd_demo_invoice_read, $object ]
         _frontend:
             view:
-                list: @PMDWorkflowDemo\Invoice\list.html.twig
-                read: @PMDWorkflowDemo\Invoice\read.html.twig
+                list: @PMDDemoInvoice\Invoice\list.html.twig
+                read: @PMDDemoInvoice\Invoice\read.html.twig
             vars:
                 block_view: @PMDFrontend\Block\semantic.html.twig
                 layout_view: Layout\default.html.twig
                 document_view: @PMDFrontend\Document\html5.html.twig
         _resources:
-            objects: @=service('pmd_workflow_demo.model.invoice_repository').findAll()
-            object: @=service('pmd_workflow_demo.model.invoice_repository').find(attribute('id'))
+            objects: @=service('pmd_demo_invoice.model.invoice_repository').findAll()
+            object: @=service('pmd_demo_invoice.model.invoice_repository').find(attribute('id'))

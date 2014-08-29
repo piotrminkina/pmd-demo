@@ -1,4 +1,0 @@
-PMD\WorkflowDemoBundle\Model\Invoice:
-    invoice{1..100}:
-        name (unique): <date('Ymd')><numerify('######')>
-        state: <invoiceState()>
